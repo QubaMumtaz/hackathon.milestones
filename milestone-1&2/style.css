@@ -1,0 +1,228 @@
+/* general styling */
+body {
+font-family: 'Times New Roman';
+background-color: #f4f4f4;
+margin: 0;
+padding: 150px;
+font-size: large;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow:0 0 20px rgb(58, 56, 56);
+    grid-template-columns: repeat(2,2fr);
+    /* flex-wrap: wrap; Allow items to wrap on smaller screens */
+   width: 60%;
+  
+
+}
+
+.left {
+    background-color: rgb(7, 7, 87);
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: left;
+   border-right: 3px solid rgb(11, 11, 71);
+} 
+
+.right {
+    background-color: white;
+    color: black;
+    padding:20px ;
+    margin: 0px;
+    width: 70%;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px blue;
+
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px blue;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.p {
+
+    padding: 2%;
+    margin:0;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.list {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+ul {
+
+    padding: 10;
+    margin: 10px 0;
+}
+
+button {
+    border-radius: 10px;
+    cursor:pointer;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: rgb(111, 111, 166)
+}
+
+#skills {
+    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    /* .resume-container {
+        flex-direction: column; /* Stack left and right sections vertically */
+    
+    
+    .left {
+        border-right: none; /* Remove border on smaller screens */
+        border-bottom: 3px solid rgb(11, 11, 71); /* Add bottom border */
+        width: 100%;
+    }
+    body{
+        padding: 60px;
+    }
+    
+    .right {
+        width: 100%; /* Ensure right section takes full width */
+    }
+    .profile-picture{
+margin: 10px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+    ul{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-container {
+        flex-direction: column; /* Stack left and right sections vertically */
+    }
+    body{
+        padding: 10px;
+    }
+    
+    .left {
+        border-right: none; /* Remove border on smaller screens */
+        border-bottom: 3px solid rgb(11, 11, 71); /* Add bottom border */
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%; /* Ensure right section takes full width */
+    }
+    .profile-picture {
+        width: 80px; /* Further reduced size for very small screens */
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 14px; /* Further reduced font size */
+    }
+    p{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 620px) {
+    /* .resume-container {
+        flex-direction: column; /* Stack left and right sections vertically */
+    /* } */ */
+    body{
+        padding: 10px;
+    }
+    
+    .left {
+        border-right: none; /* Remove border on smaller screens */
+        border-bottom: 3px solid rgb(11, 11, 71); /* Add bottom border */
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%; /* Ensure right section takes full width */
+    }
+    .profile-picture {
+        width: 80px; /* Further reduced size for very small screens */
+        height: 80px;
+    }
+
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 14px; /* Further reduced font size */
+    }
+    p{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1216px) {
+    /* .resume-container {
+        flex-direction: column; /* Stack left and right sections vertically */
+    /* body{
+        padding: 120px;
+    } */
+
+    .left, .right {
+        width: 100%; /* Full width for both sections */
+    }
+
+    .left {
+        border-right: none; /* Remove right border on smaller screens */
+        border-bottom: 3px solid rgb(11, 11, 71); /* Add bottom border */
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    ul{
+        font-size: 14px;
+    }
+}
+
